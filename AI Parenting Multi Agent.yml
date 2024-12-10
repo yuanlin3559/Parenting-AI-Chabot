@@ -1,0 +1,1045 @@
+app:
+  description: ''
+  icon: 🤖
+  icon_background: '#FFEAD5'
+  mode: workflow
+  name: AI Parenting Multi Agent
+  use_icon_as_answer_icon: false
+kind: app
+version: 0.1.2
+workflow:
+  conversation_variables: []
+  environment_variables: []
+  features:
+    file_upload:
+      image:
+        enabled: false
+        number_limits: 3
+        transfer_methods:
+        - local_file
+        - remote_url
+    opening_statement: ''
+    retriever_resource:
+      enabled: true
+    sensitive_word_avoidance:
+      enabled: false
+    speech_to_text:
+      enabled: false
+    suggested_questions: []
+    suggested_questions_after_answer:
+      enabled: false
+    text_to_speech:
+      enabled: false
+      language: ''
+      voice: ''
+  graph:
+    edges:
+    - data:
+        isInIteration: false
+        sourceType: question-classifier
+        targetType: knowledge-retrieval
+      id: 1730936047362-1-1730936138069-target
+      source: '1730936047362'
+      sourceHandle: '1'
+      target: '1730936138069'
+      targetHandle: target
+      type: custom
+      zIndex: 0
+    - data:
+        isInIteration: false
+        sourceType: question-classifier
+        targetType: knowledge-retrieval
+      id: 1730936047362-2-1730936141085-target
+      source: '1730936047362'
+      sourceHandle: '2'
+      target: '1730936141085'
+      targetHandle: target
+      type: custom
+      zIndex: 0
+    - data:
+        isInIteration: false
+        sourceType: question-classifier
+        targetType: knowledge-retrieval
+      id: 1730936047362-1730936080987-1730936143685-target
+      source: '1730936047362'
+      sourceHandle: '1730936080987'
+      target: '1730936143685'
+      targetHandle: target
+      type: custom
+      zIndex: 0
+    - data:
+        isInIteration: false
+        sourceType: question-classifier
+        targetType: knowledge-retrieval
+      id: 1730936047362-1730936090805-1730936147735-target
+      source: '1730936047362'
+      sourceHandle: '1730936090805'
+      target: '1730936147735'
+      targetHandle: target
+      type: custom
+      zIndex: 0
+    - data:
+        isInIteration: false
+        sourceType: knowledge-retrieval
+        targetType: llm
+      id: 1730936138069-source-1730936214770-target
+      source: '1730936138069'
+      sourceHandle: source
+      target: '1730936214770'
+      targetHandle: target
+      type: custom
+      zIndex: 0
+    - data:
+        isInIteration: false
+        sourceType: knowledge-retrieval
+        targetType: llm
+      id: 1730936141085-source-1730936246219-target
+      source: '1730936141085'
+      sourceHandle: source
+      target: '1730936246219'
+      targetHandle: target
+      type: custom
+      zIndex: 0
+    - data:
+        isInIteration: false
+        sourceType: knowledge-retrieval
+        targetType: llm
+      id: 1730936143685-source-1730936248720-target
+      source: '1730936143685'
+      sourceHandle: source
+      target: '1730936248720'
+      targetHandle: target
+      type: custom
+      zIndex: 0
+    - data:
+        isInIteration: false
+        sourceType: knowledge-retrieval
+        targetType: llm
+      id: 1730936147735-source-1730936250869-target
+      source: '1730936147735'
+      sourceHandle: source
+      target: '1730936250869'
+      targetHandle: target
+      type: custom
+      zIndex: 0
+    - data:
+        isInIteration: false
+        sourceType: start
+        targetType: question-classifier
+      id: 1730935784271-source-1730936047362-target
+      source: '1730935784271'
+      sourceHandle: source
+      target: '1730936047362'
+      targetHandle: target
+      type: custom
+      zIndex: 0
+    - data:
+        isInIteration: false
+        sourceType: llm
+        targetType: end
+      id: 1733348150395-source-1732144274107-target
+      source: '1733348150395'
+      sourceHandle: source
+      target: '1732144274107'
+      targetHandle: target
+      type: custom
+      zIndex: 0
+    - data:
+        isInIteration: false
+        sourceType: llm
+        targetType: llm
+      id: 1730936214770-source-1733348150395-target
+      source: '1730936214770'
+      sourceHandle: source
+      target: '1733348150395'
+      targetHandle: target
+      type: custom
+      zIndex: 0
+    - data:
+        isInIteration: false
+        sourceType: llm
+        targetType: llm
+      id: 1730936246219-source-1733348366253-target
+      source: '1730936246219'
+      sourceHandle: source
+      target: '1733348366253'
+      targetHandle: target
+      type: custom
+      zIndex: 0
+    - data:
+        isInIteration: false
+        sourceType: llm
+        targetType: end
+      id: 1733348366253-source-1733347908610-target
+      source: '1733348366253'
+      sourceHandle: source
+      target: '1733347908610'
+      targetHandle: target
+      type: custom
+      zIndex: 0
+    - data:
+        isInIteration: false
+        sourceType: llm
+        targetType: llm
+      id: 1730936248720-source-1733348404539-target
+      source: '1730936248720'
+      sourceHandle: source
+      target: '1733348404539'
+      targetHandle: target
+      type: custom
+      zIndex: 0
+    - data:
+        isInIteration: false
+        sourceType: llm
+        targetType: end
+      id: 1733348404539-source-1733347915002-target
+      source: '1733348404539'
+      sourceHandle: source
+      target: '1733347915002'
+      targetHandle: target
+      type: custom
+      zIndex: 0
+    - data:
+        isInIteration: false
+        sourceType: llm
+        targetType: llm
+      id: 1730936250869-source-1733348421386-target
+      source: '1730936250869'
+      sourceHandle: source
+      target: '1733348421386'
+      targetHandle: target
+      type: custom
+      zIndex: 0
+    - data:
+        isInIteration: false
+        sourceType: llm
+        targetType: end
+      id: 1733348421386-source-1733347923759-target
+      source: '1733348421386'
+      sourceHandle: source
+      target: '1733347923759'
+      targetHandle: target
+      type: custom
+      zIndex: 0
+    nodes:
+    - data:
+        desc: ''
+        selected: false
+        title: Start
+        type: start
+        variables:
+        - label: query
+          max_length: 144
+          options: []
+          required: true
+          type: paragraph
+          variable: query
+      height: 89
+      id: '1730935784271'
+      position:
+        x: 424.51165028600144
+        y: 182.45641995614838
+      positionAbsolute:
+        x: 424.51165028600144
+        y: 182.45641995614838
+      selected: false
+      sourcePosition: right
+      targetPosition: left
+      type: custom
+      width: 244
+    - data:
+        classes:
+        - id: '1'
+          name: Child Development
+        - id: '2'
+          name: Child Care
+        - id: '1730936080987'
+          name: Health and Well-being
+        - id: '1730936090805'
+          name: Food and Nutrition
+        desc: ''
+        instruction: 'The  Question Classifier block is designed to categorize user
+          input questions into predefined categories such as Child Development, Child
+          Care, Health and Well-being, and Food and Nutrition.
+
+
+          Usage Example
+
+          Input Example: "What should I feed my six-month-old?"
+
+          Expected Output: "Food and Nutrition"'
+        instructions: ''
+        model:
+          completion_params:
+            temperature: 0.7
+          mode: chat
+          name: gemini-1.5-flash-001
+          provider: google
+        query_variable_selector:
+        - '1730935784271'
+        - query
+        selected: false
+        title: Question Classifier
+        topics: []
+        type: question-classifier
+      height: 263
+      id: '1730936047362'
+      position:
+        x: 727.9650768987946
+        y: 182.45641995614838
+      positionAbsolute:
+        x: 727.9650768987946
+        y: 182.45641995614838
+      selected: false
+      sourcePosition: right
+      targetPosition: left
+      type: custom
+      width: 244
+    - data:
+        dataset_ids:
+        - 6cbe3139-63e2-489a-8900-05c818d7e450
+        desc: ''
+        multiple_retrieval_config:
+          reranking_enable: false
+          reranking_mode: reranking_model
+          reranking_model:
+            model: ''
+            provider: ''
+          score_threshold: null
+          top_k: 10
+        query_variable_selector:
+        - '1730936047362'
+        - class_name
+        retrieval_mode: multiple
+        selected: false
+        title: Knowledge Retrieval
+        type: knowledge-retrieval
+      height: 91
+      id: '1730936138069'
+      position:
+        x: 1014.9139195016827
+        y: 109.72972173369013
+      positionAbsolute:
+        x: 1014.9139195016827
+        y: 109.72972173369013
+      selected: false
+      sourcePosition: right
+      targetPosition: left
+      type: custom
+      width: 244
+    - data:
+        dataset_ids:
+        - 9659a781-3ed3-473a-938e-f84ead0a4dd3
+        desc: ''
+        multiple_retrieval_config:
+          reranking_enable: false
+          reranking_mode: reranking_model
+          reranking_model:
+            model: ''
+            provider: ''
+          score_threshold: null
+          top_k: 10
+        query_variable_selector:
+        - '1730936047362'
+        - class_name
+        retrieval_mode: multiple
+        selected: false
+        title: Knowledge Retrieval 2
+        type: knowledge-retrieval
+      height: 91
+      id: '1730936141085'
+      position:
+        x: 1014.9139195016827
+        y: 236.94475455719618
+      positionAbsolute:
+        x: 1014.9139195016827
+        y: 236.94475455719618
+      selected: false
+      sourcePosition: right
+      targetPosition: left
+      type: custom
+      width: 244
+    - data:
+        dataset_ids:
+        - 9b1dddc4-578d-43fe-a665-869a4d1d1eba
+        desc: ''
+        multiple_retrieval_config:
+          reranking_enable: false
+          reranking_mode: reranking_model
+          reranking_model:
+            model: ''
+            provider: ''
+          score_threshold: null
+          top_k: 10
+        query_variable_selector:
+        - '1730936047362'
+        - class_name
+        retrieval_mode: multiple
+        selected: false
+        title: Knowledge Retrieval 3
+        type: knowledge-retrieval
+      height: 91
+      id: '1730936143685'
+      position:
+        x: 1014.9139195016827
+        y: 354.2077128871028
+      positionAbsolute:
+        x: 1014.9139195016827
+        y: 354.2077128871028
+      selected: false
+      sourcePosition: right
+      targetPosition: left
+      type: custom
+      width: 244
+    - data:
+        dataset_ids:
+        - cb04409c-d69a-4dd8-8a6d-e615cbf358b1
+        desc: ''
+        multiple_retrieval_config:
+          reranking_enable: false
+          reranking_mode: reranking_model
+          reranking_model:
+            model: ''
+            provider: ''
+          score_threshold: null
+          top_k: 10
+        query_variable_selector:
+        - '1730936047362'
+        - class_name
+        retrieval_mode: multiple
+        selected: false
+        title: Knowledge Retrieval 4
+        type: knowledge-retrieval
+      height: 91
+      id: '1730936147735'
+      position:
+        x: 1014.9139195016827
+        y: 472.94148537127523
+      positionAbsolute:
+        x: 1014.9139195016827
+        y: 472.94148537127523
+      selected: false
+      sourcePosition: right
+      targetPosition: left
+      type: custom
+      width: 244
+    - data:
+        context:
+          enabled: true
+          variable_selector:
+          - '1730936138069'
+          - result
+        desc: ''
+        model:
+          completion_params:
+            temperature: 0.7
+          mode: chat
+          name: gemini-1.5-flash-001
+          provider: google
+        prompt_template:
+        - id: f256538b-49c6-4b15-8253-f5f1f7e36aee
+          role: system
+          text: "```xml\n<instruction>\nYou are a child development expert. You will\
+            \ answer the user input query question, assuming it is classified as \"\
+            Child Development\". If there is no context, you make the answer. \n\n\
+            Here is the question that you will answer:\n<question>\n{{#1730935784271.query#}}\n\
+            </question>\n\nUse the following context as your learned knowledge, inside\
+            \ `<context>` XML tags. \n</instructions>\n\n<context>\n{{#context#}}\n\
+            </context>\n\n<instructions>\n1. **Read the user input query.**\n2. **Assume\
+            \ the user input query is classified as \"Child Development\".**\n3. **Answer\
+            \ the user input query question in a comprehensive and informative manner,\
+            \ drawing upon your knowledge of child development.**\n4. **Provide clear\
+            \ and concise explanations, using appropriate terminology and avoiding\
+            \ jargon.**\n5. **Tailor your response to the specific needs of the user,\
+            \ providing relevant information and insights.**\n6. **Do not include\
+            \ any XML tags in your output.**\n</instructions>\n\n<examples>\n<example>\n\
+            **User Input Query:** What are the stages of language development in children?\n\
+            \n**Your Response:** \nChildren's language development progresses through\
+            \ several stages, each characterized by distinct milestones and abilities.\
+            \ \n\n* **Pre-linguistic Stage (Birth to 12 Months):** During this stage,\
+            \ infants begin to develop the foundations of language, including vocalizations,\
+            \ babbling, and understanding simple words.\n* **One-Word Stage (12-18\
+            \ Months):** Children start to use single words to express their needs\
+            \ and desires.\n* **Two-Word Stage (18-24 Months):** Children begin to\
+            \ combine two words into simple phrases, such as \"want milk\" or \"more\
+            \ juice.\"\n* **Telegraphic Speech (2-3 Years):** Children use short,\
+            \ grammatically incomplete sentences, focusing on key words.\n* **Early\
+            \ Multiword Stage (3-5 Years):** Children's language becomes more complex,\
+            \ with longer sentences and more sophisticated grammar.\n* **Later Multiword\
+            \ Stage (5+ Years):** Children continue to refine their language skills,\
+            \ developing fluency, vocabulary, and understanding of complex grammatical\
+            \ structures.\n</example>\n\n<example>\n**User Input Query:** How can\
+            \ I encourage my toddler's social development?\n\n**Your Response:** \n\
+            Encouraging your toddler's social development is crucial for their overall"
+        selected: false
+        title: Child Development
+        type: llm
+        variables: []
+        vision:
+          configs:
+            detail: high
+          enabled: true
+      height: 97
+      id: '1730936214770'
+      position:
+        x: 1290.7607736415453
+        y: 109.72972173369013
+      positionAbsolute:
+        x: 1290.7607736415453
+        y: 109.72972173369013
+      selected: false
+      sourcePosition: right
+      targetPosition: left
+      type: custom
+      width: 244
+    - data:
+        context:
+          enabled: true
+          variable_selector:
+          - '1730936141085'
+          - result
+        desc: ''
+        model:
+          completion_params:
+            temperature: 0.7
+          mode: chat
+          name: gemini-1.5-flash-001
+          provider: google
+        prompt_template:
+        - id: 585f8fb9-8963-4f98-8eea-83e3b6dcb5fb
+          role: system
+          text: "```xml\n<instruction>\nYou are a child development expert. You will\
+            \ answer the user input query question, assuming it is classified as \"\
+            Child Development\". \n\nHere is the question that you will answer:\n\
+            <question>\n{{#1730935784271.query#}}\n</question>\n\nUse the following\
+            \ context as your learned knowledge, inside `<context>` XML tags. \n</instructions>\n\
+            \n<context>\n{{#context#}}\n</context>\n\n<instructions>\n1. **Read the\
+            \ user input query.**\n2. **Assume the user input query is classified\
+            \ as \"Child Development\".**\n3. **Answer the user input query question\
+            \ in a comprehensive and informative manner, drawing upon your knowledge\
+            \ of child development.**\n4. **Provide clear and concise explanations,\
+            \ using appropriate terminology and avoiding jargon.**\n5. **Tailor your\
+            \ response to the specific needs of the user, providing relevant information\
+            \ and insights.**\n6. **Do not include any XML tags in your output.**\n\
+            </instructions>\n\n<examples>\n<example>\n**User Input Query:** What are\
+            \ some tips for creating a safe and stimulating environment for a toddler?\n\
+            \n**Your Response:** \nCreating a safe and stimulating environment for\
+            \ a toddler is essential for their physical, cognitive, and social development.\
+            \ Here are some tips:\n\n* **Safety First:** Ensure your home is childproofed,\
+            \ with all potential hazards removed or secured. This includes covering\
+            \ electrical outlets, securing furniture, and storing cleaning supplies\
+            \ and medications out of reach.\n* **Stimulating Play:** Provide a variety\
+            \ of age-appropriate toys and activities that encourage exploration, creativity,\
+            \ and problem-solving. This could include blocks, puzzles, art supplies,\
+            \ and sensory toys.\n* **Outdoor Play:** Encourage outdoor play, which\
+            \ provides opportunities for physical activity, sensory experiences, and\
+            \ social interaction.\n* **Reading and Storytelling:** Read to your toddler\
+            \ regularly, exposing them to language, vocabulary, and imagination.\n\
+            * **Social Interaction:** Facilitate opportunities for your toddler to\
+            \ interact with other children and adults, fostering social skills and\
+            \ emotional development.\n</example>\n\n<example>\n**User Input Query:**\
+            \ How can I help my preschooler develop their fine motor skills?\n\n**Your\
+            \ Response:** \nDeveloping fine motor skills is crucial for preschoolers,\
+            \ as it lays the foundation for handwriting, drawing, and other essential\
+            \ skills. Here are some ways to encourage their fine motor development:\n\
+            \n* **"
+        selected: false
+        title: Child Care
+        type: llm
+        variables: []
+        vision:
+          configs:
+            detail: high
+          enabled: true
+      height: 97
+      id: '1730936246219'
+      position:
+        x: 1297.1863905520559
+        y: 228.76728114420018
+      positionAbsolute:
+        x: 1297.1863905520559
+        y: 228.76728114420018
+      selected: false
+      sourcePosition: right
+      targetPosition: left
+      type: custom
+      width: 244
+    - data:
+        context:
+          enabled: true
+          variable_selector:
+          - '1730936143685'
+          - result
+        desc: ''
+        model:
+          completion_params:
+            temperature: 0.7
+          mode: chat
+          name: gemini-1.5-flash-001
+          provider: google
+        prompt_template:
+        - id: d67ac6df-bf9d-44a9-be9c-77db9522e922
+          role: system
+          text: "```xml\n<instruction>\nYou are a child health expert. You will answer\
+            \ the user input query question, assuming it is classified as \"Child\
+            \ Health\". \n\nHere is the question that you will answer:\n<question>\n\
+            {{#1730935784271.query#}}\n</question>\n\nUse the following context as\
+            \ your learned knowledge, inside `<context>` XML tags. \n</instructions>\n\
+            \n<context>\n{{#context#}}\n</context>\n\n<instructions>\n1. **Read the\
+            \ user input query.**\n2. **Assume the user input query is classified\
+            \ as \"Child Health\".**\n3. **Answer the user input query question in\
+            \ a comprehensive and informative manner, drawing upon your knowledge\
+            \ of child health.**\n4. **Provide clear and concise explanations, using\
+            \ appropriate terminology and avoiding jargon.**\n5. **Tailor your response\
+            \ to the specific needs of the user, providing relevant information and\
+            \ insights.**\n6. **Do not include any XML tags in your output.**\n</instructions>\n\
+            \n<examples>\n<example>\n**User Input Query:** What are some common childhood\
+            \ illnesses?\n\n**Your Response:** \nChildhood illnesses are a common\
+            \ part of growing up, and most children experience a range of infections\
+            \ and ailments. Some common childhood illnesses include:\n\n* **The common\
+            \ cold:** Caused by viruses, the common cold is characterized by symptoms\
+            \ such as runny nose, cough, sore throat, and fever.\n* **Ear infections:**\
+            \ These infections occur when bacteria or viruses infect the middle ear.\
+            \ Symptoms include ear pain, fever, and irritability.\n* **Flu (influenza):**\
+            \ A highly contagious respiratory illness caused by viruses, the flu can\
+            \ cause fever, cough, sore throat, muscle aches, and fatigue.\n* **Chickenpox:**\
+            \ A highly contagious viral infection that causes itchy blisters all over\
+            \ the body.\n* **Measles:** A serious viral infection that can cause fever,\
+            \ rash, cough, runny nose, and conjunctivitis.\n* **Mumps:** A viral infection\
+            \ that causes swelling of the salivary glands.\n* **Rubella (German measles):**\
+            \ A viral infection that can cause rash, fever, and swollen lymph nodes.\n\
+            * **Hand, foot, and mouth disease:** A viral infection that causes sores\
+            \ in the mouth, on the hands, and on the feet.\n* **Roseola:** A viral\
+            \ infection that causes high fever followed by a rash.\n* **Fifth disease\
+            \ (ery"
+        selected: false
+        title: Health and Well-being
+        type: llm
+        variables: []
+        vision:
+          configs:
+            detail: high
+          enabled: true
+      height: 97
+      id: '1730936248720'
+      position:
+        x: 1283.2614994895398
+        y: 354.2077128871028
+      positionAbsolute:
+        x: 1283.2614994895398
+        y: 354.2077128871028
+      selected: true
+      sourcePosition: right
+      targetPosition: left
+      type: custom
+      width: 244
+    - data:
+        context:
+          enabled: true
+          variable_selector:
+          - '1730936147735'
+          - result
+        desc: ''
+        model:
+          completion_params:
+            temperature: 0.7
+          mode: chat
+          name: gemini-1.5-flash-exp-0827
+          provider: google
+        prompt_template:
+        - id: 38c9c68e-5b16-41ec-9ad6-ac225c66272b
+          role: system
+          text: "```xml\n<instructions>\nYou are a child food and nutrition expert.\
+            \ \n\nHere is the question that you will answer:\n<question>\n{{#1730935784271.query#}}\n\
+            </question>\n\nUse the following context as your learned knowledge, inside\
+            \ `<context>` XML tags. \n</instructions>\n\n<context>\n{{#context#}}\n\
+            </context>\n\n<instructions>\n1. **Read the user input query.**\n2. **Assume\
+            \ the user input query is classified as \"Child Development\".**\n3. **Answer\
+            \ the user input query question in a comprehensive and informative manner,\
+            \ drawing upon your knowledge of child development.**\n4. **Provide clear\
+            \ and concise explanations, using appropriate terminology and avoiding\
+            \ jargon.**\n5. **Tailor your response to the specific needs of the user,\
+            \ providing relevant information and insights.**\n6. **Do not include\
+            \ any XML tags in your output.**\n</instructions>\n\n<examples>\n<example>\n\
+            **Input:**  A 5-year-old child who is picky about vegetables.\n**Output:**\
+            \  Try introducing vegetables in fun ways, like cutting them into fun\
+            \ shapes or adding them to smoothies. You can also try offering vegetables\
+            \ with dips like hummus or guacamole. \n</example>\n\n<example>\n**Input:**\
+            \  A 10-year-old child who is active in sports.\n**Output:**  Make sure\
+            \ your child is getting enough protein and carbohydrates to fuel their\
+            \ activity. Good sources of protein include lean meats, beans, and tofu.\
+            \ Good sources of carbohydrates include whole grains, fruits, and vegetables.\n\
+            </example>\n\n<example>\n**Input:**  A 2-year-old child who is starting\
+            \ to eat solid foods.\n**Output:**  Start with soft, easy-to-chew foods\
+            \ like mashed bananas, avocado, and cooked sweet potatoes. Gradually introduce\
+            \ new foods one at a time, and be patient. It may take several tries for\
+            \ your child to accept a new food.\n</example>\n</examples>\n```"
+        selected: false
+        title: Food and nutrition
+        type: llm
+        variables: []
+        vision:
+          configs:
+            detail: high
+          enabled: false
+      height: 97
+      id: '1730936250869'
+      position:
+        x: 1290.7607736415453
+        y: 472.94148537127523
+      positionAbsolute:
+        x: 1290.7607736415453
+        y: 472.94148537127523
+      selected: false
+      sourcePosition: right
+      targetPosition: left
+      type: custom
+      width: 244
+    - data:
+        desc: ''
+        outputs:
+        - value_selector:
+          - '1733348150395'
+          - text
+          variable: text
+        selected: false
+        title: End
+        type: end
+      height: 89
+      id: '1732144274107'
+      position:
+        x: 1856.667090131119
+        y: 109.72972173369013
+      positionAbsolute:
+        x: 1856.667090131119
+        y: 109.72972173369013
+      selected: false
+      sourcePosition: right
+      targetPosition: left
+      type: custom
+      width: 244
+    - data:
+        desc: ''
+        outputs:
+        - value_selector:
+          - '1733348366253'
+          - text
+          variable: text
+        selected: false
+        title: End 2
+        type: end
+      height: 89
+      id: '1733347908610'
+      position:
+        x: 1856.667090131119
+        y: 228.76728114420018
+      positionAbsolute:
+        x: 1856.667090131119
+        y: 228.76728114420018
+      selected: false
+      sourcePosition: right
+      targetPosition: left
+      type: custom
+      width: 244
+    - data:
+        desc: ''
+        outputs:
+        - value_selector:
+          - '1730936248720'
+          - text
+          variable: text
+        selected: false
+        title: End 3
+        type: end
+      height: 89
+      id: '1733347915002'
+      position:
+        x: 1856.667090131119
+        y: 354.2077128871028
+      positionAbsolute:
+        x: 1856.667090131119
+        y: 354.2077128871028
+      selected: false
+      sourcePosition: right
+      targetPosition: left
+      type: custom
+      width: 244
+    - data:
+        desc: ''
+        outputs:
+        - value_selector:
+          - '1730936250869'
+          - text
+          variable: text
+        selected: false
+        title: End 4
+        type: end
+      height: 89
+      id: '1733347923759'
+      position:
+        x: 1856.667090131119
+        y: 472.94148537127523
+      positionAbsolute:
+        x: 1856.667090131119
+        y: 472.94148537127523
+      selected: false
+      sourcePosition: right
+      targetPosition: left
+      type: custom
+      width: 244
+    - data:
+        context:
+          enabled: false
+          variable_selector: []
+        desc: ''
+        model:
+          completion_params:
+            temperature: 0.7
+          mode: chat
+          name: gemini-1.5-flash-001
+          provider: google
+        prompt_template:
+        - id: f65ceac0-3881-4ccf-960d-a5cdcbc4cf3b
+          role: system
+          text: "```xml\n<instruction>\nImagine you are a friendly and helpful teacher\
+            \ explaining a complex concept to a 6th-grade student. Your goal is to\
+            \ take {{#1730936214770.text#}} rewrite it in a way that is easy to understand\
+            \ and positive.  \n\n**Here's how to do it:**\n\n1. **Read the text carefully:**\
+            \ Understand the main idea and key points.\n2. **Simplify the language:**\
+            \ Use words and phrases that a 6th-grader would easily understand. Avoid\
+            \ jargon or technical terms.\n3. **Break down complex sentences:**  Make\
+            \ sure each sentence is clear and concise.\n4. **Use positive language:**\
+            \ Focus on the benefits and exciting aspects of the topic. Avoid negative\
+            \ or discouraging words.\n5. **Add examples:**  Use relatable examples\
+            \ to illustrate the concepts.\n6. **Keep it engaging:**  Make the text\
+            \ interesting and fun to read.\n\n**Remember:** The output should be in\
+            \ plain text format, without any XML tags. \n\n</instruction>\n\n<examples>\n\
+            **Example 1:**\n\n**Input:** \"The process of photosynthesis is a complex\
+            \ biochemical reaction that involves the conversion of light energy into\
+            \ chemical energy.\"\n\n**Output:** \"Plants use sunlight to make their\
+            \ own food! It's like a magic trick where they turn light into energy\
+            \ they can use to grow.\"\n\n**Example 2:**\n\n**Input:** \"The Industrial\
+            \ Revolution was a period of significant technological advancements that\
+            \ led to widespread social and economic changes.\"\n\n**Output:** \"The\
+            \ Industrial Revolution was a time when amazing new inventions were created!\
+            \ These inventions changed how people lived and worked, making life easier\
+            \ and more exciting.\"\n\n**Example 3:**\n\n**Input:** \"The theory of\
+            \ relativity is a complex scientific concept that describes the relationship\
+            \ between space, time, and gravity.\"\n\n**Output:** \"Einstein's theory\
+            \ of relativity is like a puzzle that helps us understand how space, time,\
+            \ and gravity work together. It's a really cool idea that shows how amazing\
+            \ our universe is!\"\n</examples>\n```"
+        selected: false
+        title: LLM 5
+        type: llm
+        variables: []
+        vision:
+          configs:
+            detail: high
+          enabled: true
+      height: 97
+      id: '1733348150395'
+      position:
+        x: 1577.0440372933576
+        y: 109.72972173369013
+      positionAbsolute:
+        x: 1577.0440372933576
+        y: 109.72972173369013
+      selected: false
+      sourcePosition: right
+      targetPosition: left
+      type: custom
+      width: 244
+    - data:
+        context:
+          enabled: false
+          variable_selector: []
+        desc: ''
+        model:
+          completion_params:
+            temperature: 0.7
+          mode: chat
+          name: gemini-1.5-flash-001
+          provider: google
+        prompt_template:
+        - id: f27ded0f-9045-44f2-84b9-c9d3f0a67665
+          role: system
+          text: "```xml\n<instruction>\nImagine you are a friendly and helpful teacher\
+            \ explaining a complex concept to a 6th-grade student. Your goal is to\
+            \ take {{#1730936246219.text#}} rewrite it in a way that is easy to understand\
+            \ and positive.  \n\n**Here's how to do it:**\n\n1. **Read the text carefully:**\
+            \ Understand the main idea and key points.\n2. **Simplify the language:**\
+            \ Use words and phrases that a 6th-grader would easily understand. Avoid\
+            \ jargon or technical terms.\n3. **Break down complex sentences:**  Make\
+            \ sure each sentence is clear and concise.\n4. **Use positive language:**\
+            \ Focus on the benefits and exciting aspects of the topic. Avoid negative\
+            \ or discouraging words.\n5. **Add examples:**  Use relatable examples\
+            \ to illustrate the concepts.\n6. **Keep it engaging:**  Make the text\
+            \ interesting and fun to read.\n\n**Remember:** The output should be in\
+            \ plain text format, without any XML tags. \n\n</instruction>\n\n<examples>\n\
+            **Example 1:**\n\n**Input:** \"The process of photosynthesis is a complex\
+            \ biochemical reaction that involves the conversion of light energy into\
+            \ chemical energy.\"\n\n**Output:** \"Plants use sunlight to make their\
+            \ own food! It's like a magic trick where they turn light into energy\
+            \ they can use to grow.\"\n\n**Example 2:**\n\n**Input:** \"The Industrial\
+            \ Revolution was a period of significant technological advancements that\
+            \ led to widespread social and economic changes.\"\n\n**Output:** \"The\
+            \ Industrial Revolution was a time when amazing new inventions were created!\
+            \ These inventions changed how people lived and worked, making life easier\
+            \ and more exciting.\"\n\n**Example 3:**\n\n**Input:** \"The theory of\
+            \ relativity is a complex scientific concept that describes the relationship\
+            \ between space, time, and gravity.\"\n\n**Output:** \"Einstein's theory\
+            \ of relativity is like a puzzle that helps us understand how space, time,\
+            \ and gravity work together. It's a really cool idea that shows how amazing\
+            \ our universe is!\"\n</examples>\n```"
+        selected: false
+        title: LLM 6
+        type: llm
+        variables: []
+        vision:
+          configs:
+            detail: high
+          enabled: true
+      height: 97
+      id: '1733348366253'
+      position:
+        x: 1577.0440372933576
+        y: 228.76728114420018
+      positionAbsolute:
+        x: 1577.0440372933576
+        y: 228.76728114420018
+      selected: false
+      sourcePosition: right
+      targetPosition: left
+      type: custom
+      width: 244
+    - data:
+        context:
+          enabled: false
+          variable_selector: []
+        desc: ''
+        model:
+          completion_params:
+            temperature: 0.7
+          mode: chat
+          name: gemini-1.5-flash-001
+          provider: google
+        prompt_template:
+        - id: 2a505790-b47d-4d53-8e43-07abc0d4a0af
+          role: system
+          text: "```xml\n<instruction>\nImagine you are a friendly and helpful teacher\
+            \ explaining a complex concept to a 6th-grade student. Your goal is to\
+            \ take {{#1730936248720.text#}} rewrite it in a way that is easy to understand\
+            \ and positive.  \n\n**Here's how to do it:**\n\n1. **Read the text carefully:**\
+            \ Understand the main idea and key points.\n2. **Simplify the language:**\
+            \ Use words and phrases that a 6th-grader would easily understand. Avoid\
+            \ jargon or technical terms.\n3. **Break down complex sentences:**  Make\
+            \ sure each sentence is clear and concise.\n4. **Use positive language:**\
+            \ Focus on the benefits and exciting aspects of the topic. Avoid negative\
+            \ or discouraging words.\n5. **Add examples:**  Use relatable examples\
+            \ to illustrate the concepts.\n6. **Keep it engaging:**  Make the text\
+            \ interesting and fun to read.\n\n**Remember:** The output should be in\
+            \ plain text format, without any XML tags. \n\n</instruction>\n\n<examples>\n\
+            **Example 1:**\n\n**Input:** \"The process of photosynthesis is a complex\
+            \ biochemical reaction that involves the conversion of light energy into\
+            \ chemical energy.\"\n\n**Output:** \"Plants use sunlight to make their\
+            \ own food! It's like a magic trick where they turn light into energy\
+            \ they can use to grow.\"\n\n**Example 2:**\n\n**Input:** \"The Industrial\
+            \ Revolution was a period of significant technological advancements that\
+            \ led to widespread social and economic changes.\"\n\n**Output:** \"The\
+            \ Industrial Revolution was a time when amazing new inventions were created!\
+            \ These inventions changed how people lived and worked, making life easier\
+            \ and more exciting.\"\n\n**Example 3:**\n\n**Input:** \"The theory of\
+            \ relativity is a complex scientific concept that describes the relationship\
+            \ between space, time, and gravity.\"\n\n**Output:** \"Einstein's theory\
+            \ of relativity is like a puzzle that helps us understand how space, time,\
+            \ and gravity work together. It's a really cool idea that shows how amazing\
+            \ our universe is!\"\n</examples>\n```"
+        selected: false
+        title: LLM 7
+        type: llm
+        variables: []
+        vision:
+          configs:
+            detail: high
+          enabled: true
+      height: 97
+      id: '1733348404539'
+      position:
+        x: 1577.0440372933576
+        y: 354.2077128871028
+      positionAbsolute:
+        x: 1577.0440372933576
+        y: 354.2077128871028
+      selected: false
+      sourcePosition: right
+      targetPosition: left
+      type: custom
+      width: 244
+    - data:
+        context:
+          enabled: false
+          variable_selector: []
+        desc: ''
+        model:
+          completion_params:
+            temperature: 0.7
+          mode: chat
+          name: gemini-1.5-flash-001
+          provider: google
+        prompt_template:
+        - id: 4aeeb526-cb9d-44b9-b597-6cd79ec83b70
+          role: system
+          text: "```xml\n<instruction>\nImagine you are a friendly and helpful teacher\
+            \ explaining a complex concept to a 6th-grade student. Your goal is to\
+            \ take {{#1730936250869.text#}} rewrite it in a way that is easy to understand\
+            \ and positive.  \n\n**Here's how to do it:**\n\n1. **Read the text carefully:**\
+            \ Understand the main idea and key points.\n2. **Simplify the language:**\
+            \ Use words and phrases that a 6th-grader would easily understand. Avoid\
+            \ jargon or technical terms.\n3. **Break down complex sentences:**  Make\
+            \ sure each sentence is clear and concise.\n4. **Use positive language:**\
+            \ Focus on the benefits and exciting aspects of the topic. Avoid negative\
+            \ or discouraging words.\n5. **Add examples:**  Use relatable examples\
+            \ to illustrate the concepts.\n6. **Keep it engaging:**  Make the text\
+            \ interesting and fun to read.\n\n**Remember:** The output should be in\
+            \ plain text format, without any XML tags. \n\n</instruction>\n\n<examples>\n\
+            **Example 1:**\n\n**Input:** \"The process of photosynthesis is a complex\
+            \ biochemical reaction that involves the conversion of light energy into\
+            \ chemical energy.\"\n\n**Output:** \"Plants use sunlight to make their\
+            \ own food! It's like a magic trick where they turn light into energy\
+            \ they can use to grow.\"\n\n**Example 2:**\n\n**Input:** \"The Industrial\
+            \ Revolution was a period of significant technological advancements that\
+            \ led to widespread social and economic changes.\"\n\n**Output:** \"The\
+            \ Industrial Revolution was a time when amazing new inventions were created!\
+            \ These inventions changed how people lived and worked, making life easier\
+            \ and more exciting.\"\n\n**Example 3:**\n\n**Input:** \"The theory of\
+            \ relativity is a complex scientific concept that describes the relationship\
+            \ between space, time, and gravity.\"\n\n**Output:** \"Einstein's theory\
+            \ of relativity is like a puzzle that helps us understand how space, time,\
+            \ and gravity work together. It's a really cool idea that shows how amazing\
+            \ our universe is!\"\n</examples>\n```"
+        selected: false
+        title: LLM 8
+        type: llm
+        variables: []
+        vision:
+          configs:
+            detail: high
+          enabled: true
+      height: 97
+      id: '1733348421386'
+      position:
+        x: 1577.0440372933576
+        y: 472.94148537127523
+      positionAbsolute:
+        x: 1577.0440372933576
+        y: 472.94148537127523
+      selected: false
+      sourcePosition: right
+      targetPosition: left
+      type: custom
+      width: 244
+    viewport:
+      x: -59.47113468315433
+      y: 250.6568950514707
+      zoom: 0.6451174981155963
