@@ -1,6 +1,6 @@
 Welcome to the GitHub repository for the Parenting Chatbot Project, an advanced chatbot system designed to provide accurate, readable, and accessible parenting advice for parents of newborns up to children one year old. This project leverages the power of language learning models (LLMs) to deliver information from credible sources through a user-friendly interface.
 
-Project Overview
+** Project Overview
 This chatbot aims to address the challenges parents face in finding reliable and understandable parenting information. The information available is often scattered and of uncertain origin, which can be particularly overwhelming for new parents. By providing a centralized, reliable source of parenting advice, this chatbot assists in making parenting information more accessible and actionable.
 
 System Architecture
